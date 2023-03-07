@@ -70,6 +70,13 @@ function New-SelfSignedCertificateEx {
 	
 	If the certificate is CA certificate (see IsCA parameter), key usages extension is generated
 	automatically with the following key usages: Certificate Signing, Off-line CRL Signing, CRL Signing.
+.Parameter KeyUsageProperty
+	Specifies the key usages for the key usages property of the private key. The acceptable values for this parameter are:
+	All
+	Decrypt
+	KeyAgreement
+	None (default)
+	Sign	
 .Parameter SubjectAlternativeName
 	Specifies alternative names for the subject. Unlike Subject field, this extension
 	allows to specify more than one name. Also, multiple types of alternative names
